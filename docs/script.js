@@ -40,7 +40,7 @@ function decode_bytes() {
     out.value = "Error!";
   }
 }
-export function decode_hex_string(hex_string) {
+exports.decode_hex_string = function (hex_string) {
   function hexStringToByte(hexString) {
     var result = [];
     for (var i = 0; i < hexString.length; i += 2) {
