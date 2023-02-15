@@ -1200,7 +1200,7 @@ function js_decoder(msg) {
   // Function to decode enLink response to downlink message
   function decodeStdResponse(data) {
     var obj = {};
-    for (i = 0; i < data.length; i++) {
+    for (let i = 0; i < data.length; i++) {
       switch (data[i]) {
         // Parse reply from device following a downlink command
         case ENLINK_HEADER:
